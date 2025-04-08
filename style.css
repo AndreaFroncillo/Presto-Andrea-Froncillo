@@ -17,6 +17,11 @@ h1, h2, h3, .h1, .h2, .h3, .h4{
 
 /* Preimpostazione classi per colori */
 
+body{
+    background-color: var(--black);
+    color: var(--yellow);
+}
+
 .bg-yellow{
     background-color: var(--yellow);
 }
@@ -54,11 +59,146 @@ h1, h2, h3, .h1, .h2, .h3, .h4{
 }
 
 .nav-link:hover{
-    color: white;
+    color: white !important;
     text-shadow: 2px 2px 5px var(--red), -2px -2px 5px var(--red);
 }
 
 .logo{
     width: 50px;
     transition: 0.5s;
+}
+
+.logo2{
+    width: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#collapse{
+    transition: 0.5s;
+}
+
+/* Header */
+
+.header{
+    background-image: linear-gradient(rgba(0,0,0), transparent, rgba(0,0,0)), url('https://thumbs.dreamstime.com/b/salti-nell-iperspazio-l-animazione-d-109693456.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.btn-custom{
+    color: var(--yellow);
+    background-color: var(--black);
+    border: 2px solid var(--yellow);
+    border-radius: 50px;
+    margin: 0px 15px;
+    padding: 20px 30px;
+    transition: 0.5s;
+}
+
+.btn-custom:hover{
+    color: var(--black);
+    background-color: var(--yellow);
+    transform: scale(1.1);
+}
+
+/* Positioned */
+
+.positioned{
+    position: relative;
+    top: -150px;
+}
+
+.col-custom{
+    padding: 10px;
+    border: 2px solid var(--black);
+    cursor: pointer;
+    transition: 0.5s;
+    color: var(--black);
+}
+
+.col-custom:hover{
+    transform: scale(1.1);
+    background-color: var(--black);
+    color: var(--red);
+    border: 2px solid var(--red);
+}
+
+@media screen and (max-width: 600px) {
+    .positioned{
+        position: static;
+    }
+}
+
+/* Numeri Incrementali */
+
+.number{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+/* Swiper */
+
+.swiper{
+    height: 300px;
+    margin-top: 50px;
+}
+
+.card-review{
+    height: 150px;
+    width: 350px;
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+}
+
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 100%;
+}
+
+#left{
+    color: transparent;
+}
+
+#right{
+    color: transparent;
+}
+
+/* Pagina Annunci */
+
+.accordion-item, .accordion-button{
+    background-color: var(--black);
+    color: var(--yellow);
+}
+
+.accordion-button:not(.collapsed){
+    background-color: var(--black);
+    color: var(--red);
+    box-shadow: none;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.card-custom{
+    width: 30%;
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.img-fluid{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
